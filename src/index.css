@@ -13,6 +13,8 @@
     --font-sans: "Mona Sans", sans-serif;
     --font-modern-negra: "Modern Negra", sans-serif;
     --font-serif: "DM Serif Text", serif;
+    --breakpoint-2xl: 1200px;
+
 }
 
 html,
@@ -59,6 +61,7 @@ body {
     mask-size: 50%;
 }
 
+
 @layer components {
     main {
         @apply w-full overflow-x-hidden;
@@ -68,7 +71,7 @@ body {
         @apply fixed z-50 w-full;
 
         div {
-            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5 container mx-auto;
+            @apply flex md:flex-row flex-col md:justify-between items-center gap-5 py-5 lg:px-0 px-5  container mx-auto;
         }
 
         p {
@@ -104,10 +107,10 @@ body {
         }
 
         .body {
-            @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20 top-auto md:top-[30vh] flex justify-between items-end px-5;
+            @apply container mx-auto absolute left-1/2 -translate-x-1/2 lg:bottom-20  top-auto md:top-[30vh] flex justify-between items-end px-5;
 
             .content {
-                @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
+                @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end   mx-auto;
 
                 p:nth-of-type(2) {
                     @apply font-modern-negra text-6xl text-yellow max-w-xl;
@@ -118,7 +121,7 @@ body {
                 }
 
                 .view-cocktails {
-                    @apply space-y-5 text-lg lg:max-w-2xs md:max-w-xs w-full;
+                    @apply space-y-5 text-lg lg:max-w-2xs  md:max-w-xs w-full;
 
                     p {
                         @apply text-left;
